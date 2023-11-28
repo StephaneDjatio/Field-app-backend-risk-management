@@ -16,7 +16,7 @@ djangorestframework-gis==1.0
 Fiona==1.9.4.post1
 GDAL==3.7.2
 GeoAlchemy2==0.14.1
-geopandas==0.14.0
+geopandas==0.10.2
 greenlet==2.0.2
 gunicorn==21.2.0
 idna==3.4
