@@ -29,13 +29,13 @@ urlpatterns = [
 ]
 
 # Serving the media files in development mode
-# if settings.DEBUG:
-#     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-# else:
-#     urlpatterns += staticfiles_urlpatterns()
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+else:
+    urlpatterns += staticfiles_urlpatterns()
 
-urlpatterns += [
-    re_path(r'^media/(?P<path>.*)$', serve, {
-        'document_root': settings.MEDIA_ROOT,
-    }),
-]
+# urlpatterns += [
+#     re_path(r'^media/(?P<path>.*)$', serve, {
+#         'document_root': settings.MEDIA_ROOT,
+#     }),
+# ]
